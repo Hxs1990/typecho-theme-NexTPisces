@@ -334,6 +334,7 @@ $('h2,h3').each(function(){
       menu[$(this).text()]=[];
     }
     menu.last=$(this).text();
+    console.log(menu.last);
   }
   if ($(this).is('h3')){
     menu[menu.last].push($(this).text());

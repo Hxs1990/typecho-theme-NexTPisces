@@ -525,11 +525,15 @@ var $siteSearch = $menu.find('.site-search');
 
 $menuItemSearch.click(function () {
     $siteSearch.show(200);
+    $menuItemSearch.find('a').css({color:"transparent"});
+    $menuItemSearch.find('i').css({color:"#555"});
     return false;
 });
 
 $menuItemSearch.on('mouseleave', function () {
     $siteSearch.hide(300);
+    $menuItemSearch.find('a').css({color:"#555"});
+    $menuItemSearch.find('i').css({color:"#555"});
 });
 
 NexT.utils = NexT.$u = {
@@ -537,7 +541,10 @@ NexT.utils = NexT.$u = {
      * Wrap images with fancybox support.
      */
     wrapImageWithFancyBox: function () {
-        $('.content img').not('.group-picture img').each(function () {
+        $('.content img').not('.group-picture img')
+        .not('[hidden]')
+        .not('.group-picture img, .post-gallery img, .emoji, .emojione, .nofancybox')
+        .each(function () {
 
             var $image = $(this);
             var imageTitle = $image.attr('title');

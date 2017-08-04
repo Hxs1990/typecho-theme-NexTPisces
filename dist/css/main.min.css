@@ -13,3 +13,14 @@ img.emojione {
    border:none !important;
    display:inline !important;
 }
+.site-search input {
+    padding: 3px;
+    border: none;
+    padding-left: 3px;
+    border-radius: 0;
+    width: 140px;
+    background-color: transparent;
+    background-size: 12px 12px;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
