@@ -65,26 +65,17 @@ Typecho_Widget::widget('Widget_Stat')->to($stat);
             <?php endif; ?>
             <div class="links-of-author motion-element">
   <span class="links-of-author-item">
-    <a href="https://github.com/example" target="_blank">
+    <a href="https://github.com/Hxs1990" target="_blank">
         <i class="fa fa-github"></i> GitHub
     </a>
   </span>
   <span class="links-of-author-item">
-    <a href="http://www.zhihu.com/people/example" target="_blank">
-        <i class="fa fa-globe"></i> 知乎
+    <a href="http://git.oschina.net/SimonH" target="_blank">
+        <i class="fa fa-code-fork"></i> Oschina
     </a>
   </span>
-  <span class="links-of-author-item">
-    <a href="http://v2ex.com/member/example" target="_blank">
-        <i class="fa fa-globe"></i> V2EX
-    </a>
-  </span>
-  <span class="links-of-author-item">
-    <a href="http://segmentfault.com/u/example" target="_blank">
-        <i class="fa fa-globe"></i> SF
-    </a>
-  </span>
-            </div>
+    
+    </div>
             <?php if (class_exists("Links_Plugin")): ?>
                 <div class="motion-element" <?php
                 if ($this->options->sidebarFlinks == 'hide') {

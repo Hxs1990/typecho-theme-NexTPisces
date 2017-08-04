@@ -21,8 +21,8 @@ if (!empty($this->options->next_cdn) && $this->options->next_cdn) {
     <link rel="stylesheet" href="<?php $this->options->themeUrl('vendors/fancybox/source/jquery.fancybox.css'); ?>">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext">
     <!-- 将您的favicon图标放在images文件夹下，然后取消下面两句的注释 -->
-    <!-- <link rel="shortcut icon" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>"> -->
-    <!-- <link rel="apple-touch-icon" href="<?php $this->options->themeUrl('images/icon.png'); ?>"> -->
+    <link rel="shortcut icon" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>">
+    <link rel="apple-touch-icon" href="<?php $this->options->themeUrl('images/icon.png'); ?>">
     <script type="text/javascript" id="hexo.configuration">
         var NexT = window.NexT || {};
         var CONFIG = {
